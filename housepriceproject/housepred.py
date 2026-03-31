@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
-df=pd.read_csv("E:\problems\gitprojects\pricedata.csv")
+df=pd.read_csv("E:\problems\housepriceproject\pricedata.csv")
 print(df)
 x=df[['Area','Bedrooms','Age','Distance']]
 y=df['Price']
