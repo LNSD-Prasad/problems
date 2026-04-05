@@ -33,4 +33,14 @@ Relatives	Musk family
 Awards	Full list'''
 find=re.compile(r'age (\d+)')
 result=find.findall(text)
+find1=re.compile(r'Born(.+)')
+find2=re.compile(r'Born.*\n(.*)\(age.')
+find3=re.compile(r'\(age.*\n(.*)')
+result2=find1.findall(text)
+result3=find2.findall(text)
+result4=find3.findall(text)
 print(result)
+print(result2)
+print(result3)
+print(result4)
+
