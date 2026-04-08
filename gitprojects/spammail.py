@@ -19,7 +19,7 @@ def predict_spam(message):
     message_vec=vectorizer.transform([message])
     result=model.predict(message_vec[0])
     return 'spam' if result==1 else 'ham' 
-msg=input('Enter a message')
+msg=input('Enter a message:')
 print(predict_spam(msg))
 
 
